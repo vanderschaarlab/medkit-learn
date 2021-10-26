@@ -46,6 +46,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
+            pip install --upgrade pip
+            pip install setuptools wheel twine auditwheel
             pip install -r requirements_dev.txt
             pip install .
       - name: Test with pytest
