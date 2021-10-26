@@ -27,7 +27,7 @@ jobs:
         run: pre-commit run --files medkit/*
       - name: Security checks
         run: |
-            bandit -r medkit/*
+            bandit -r medkit/* --skip B101
 
   Library:
     needs: [Linter]
