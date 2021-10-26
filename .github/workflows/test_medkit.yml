@@ -49,6 +49,6 @@ jobs:
             pip install --upgrade pip
             pip install setuptools wheel twine auditwheel
             pip install -r requirements_dev.txt
-            pip install .
+            pip install --verbose .
       - name: Test with pytest
         run: pytest -vvvsx -m "not slow"
