@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="medkit_learn",
-    version="0.1.0",
+    version="0.1.1",
     author="Alex J. Chan",
     author_email="alexjameschan@gmail.com",
     description="Medical sequential decision making simulation tools.",
